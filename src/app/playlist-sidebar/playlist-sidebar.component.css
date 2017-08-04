@@ -1,8 +1,8 @@
 .playlistContainer {
    margin-left: 10px;
-   min-height: 645 px !important;
+   min-height: 645px !important;
    margin-right: 25%;
-   background-color: #ccc;
+   background-color: #ededed;
 }
 
 .videoList {
@@ -10,15 +10,17 @@
     background-color: white;
     margin-top: 10px;
     height: 95px;
+    cursor: pointer; 
+    cursor: hand; 
 }
 
 .titleTag {
-font-size:14px;
-padding-top:5px;
-width:380px;
-display: block;
-background-color:white;
-font-family:'Helvetica Neue Light';
+    font-size:14px;
+    padding-top:5px;
+    width:380px;
+    display: block;
+    background-color:white;
+    font-family:'Helvetica Neue Light';
 }
 
 .detailTag {

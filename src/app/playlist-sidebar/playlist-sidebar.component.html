@@ -1,7 +1,7 @@
 <div class="playlistContainer">
   <ul>
     <li *ngFor="let video of videoList" class="videoList" (click)="onClickVideoFromPlayList(video)">
-        <img [src]='video.thumbnailImage' style="width:170px;height:95px;float:left;margin-right:5px;">
+        <img [src]='video.thumbnailImage' style="width:150px;height:85px;float:left;margin-right:5px;margin-left:5px;margin-top:5px;">
         <p class="titleTag">{{video.title}}</p>
         <p class="detailTag"> {{video.uploadedBy}} </p>
         <p class="detailTag"> {{video.noOfViews}} views </p>
