@@ -1,5 +1,34 @@
 .playlistContainer {
    margin-left: 10px;
-   min-height: 645 px !important;
+   min-height: 645px !important;
    margin-right: 25%;
+   background-color: #ededed;
+}
+
+.videoList {
+    list-style-type: none;
+    background-color: white;
+    margin-top: 10px;
+    height: 95px;
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+.titleTag {
+    font-size:14px;
+    padding-top:5px;
+    width:380px;
+    display: block;
+    background-color:white;
+    font-family:'Helvetica Neue Light';
+}
+
+.detailTag {
+    font-size:12px;
+    padding-top:3px;
+    color:gray;
+    width:380px;
+    display: block;
+    background-color:white;
+    font-family:'Helvetica Neue Light';
 }
