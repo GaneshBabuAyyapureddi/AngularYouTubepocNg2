@@ -1,0 +1,6 @@
+#playerContainer {
+    margin-left: 20%;
+    min-height: 360px !important;
+    max-height: 360px !important;
+    background-color:green;
+}

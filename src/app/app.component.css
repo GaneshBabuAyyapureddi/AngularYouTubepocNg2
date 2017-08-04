@@ -1,0 +1,17 @@
+#appContainer {
+    background-color: #ccc;
+}
+
+#leftContainer {
+    float: left;
+    min-width: 60% !important;
+    background-color: yellowgreen;
+    margin-top: 20px;
+}
+
+#rightContainer {
+    float: right;
+    min-width: 40% !important;
+    background-color: aquamarine;
+    margin-top: 20px;
+}
