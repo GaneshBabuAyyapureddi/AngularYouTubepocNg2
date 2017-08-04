@@ -1,6 +1,6 @@
 <div class="playlistContainer">
   <ul>
-    <li *ngFor="let video of videoList" class="videoList">
+    <li *ngFor="let video of videoList" class="videoList" (click)="onClickVideoFromPlayList(video)">
         <img [src]='video.thumbnailImage' style="width:170px;height:95px;float:left;margin-right:5px;">
         <p class="titleTag">{{video.title}}</p>
         <p class="detailTag"> {{video.uploadedBy}} </p>

@@ -12,6 +12,10 @@ export class PlaylistSidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickVideoFromPlayList(video) {
+    console.log(video.url);
+  }
+
   videoList = [
     {
       "id": "abcd1234",
