@@ -1,9 +1,11 @@
 #descriptionContainer {
     margin-left: 20%;
     margin-top: 10px;
-    max-width: 40%;
+    max-width: 80%;
+    width: 80%;
     min-height: 250px !important;
     background-color:white;
+     position: relative;
 }
 #title{
     margin-left: 20px;
@@ -19,9 +21,12 @@
     padding-bottom: 30px;
 }
 #description{    
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 12px;
+    position: absolute;
+    width: 90%;
+    text-align: justify;
 }
 #view-like{
     float:right; 

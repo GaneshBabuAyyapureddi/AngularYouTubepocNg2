@@ -9,15 +9,18 @@
     list-style-type: none;
     background-color: white;
     margin-top: 10px;
-    height: 95px;
+    height: 100px;
     cursor: pointer; 
     cursor: hand; 
+    line-height: 10px;
 }
 
 .titleTag {
     font-size:14px;
     padding-top:5px;
+    font-weight: bold;
     width:380px;
+    line-height: 16px;
     display: block;
     background-color:white;
     font-family:'Helvetica Neue Light';
@@ -25,7 +28,6 @@
 
 .detailTag {
     font-size:12px;
-    padding-top:3px;
     color:gray;
     width:380px;
     display: block;
