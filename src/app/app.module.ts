@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TitlebarComponent } from './titlebar/titlebar.component';
@@ -18,7 +19,7 @@ import { CommentboxComponent } from './commentbox/commentbox.component';
     CommentboxComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
