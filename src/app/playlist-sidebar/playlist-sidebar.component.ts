@@ -13,7 +13,7 @@ export class PlaylistSidebarComponent implements OnInit {
   }
 
   onClickVideoFromPlayList(video) {
-    console.log(video.url);
+    console.log(this.videoList[video].url);
   }
 
   videoList = [

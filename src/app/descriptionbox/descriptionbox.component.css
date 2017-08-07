@@ -2,5 +2,6 @@
     margin-left: 20%;
     margin-top: 10px;
     min-height: 170px !important;
+    max-width: 40%;
     background-color:red;
 }
