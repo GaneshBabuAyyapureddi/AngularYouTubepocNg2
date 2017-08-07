@@ -3,3 +3,25 @@
     min-height: 50px !important;
     background-color:white;
 }
+
+.searchTerm {
+    margin-top: 10px !important;
+    margin-left: 20% !important;
+    width: 50%;
+    border: 2px solid #00B4CC;
+    padding: 5px;
+    height: 30px;
+    outline: none;
+}
+
+.searchButton {
+    margin-top: 10px;
+    position: absolute;  
+    left: 808px;
+    width: 40px;
+    height: 30px;
+    border: 2px solid #00B4CC;
+    text-align: center;
+    cursor: pointer;
+ 
+}
