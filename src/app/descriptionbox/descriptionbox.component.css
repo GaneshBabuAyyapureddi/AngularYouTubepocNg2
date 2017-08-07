@@ -1,6 +1,7 @@
 #descriptionContainer {
     margin-left: 20%;
     margin-top: 10px;
+    max-width: 40%;
     min-height: 250px !important;
     background-color:white;
 }
