@@ -1,5 +1,16 @@
-<div id="commentsContainer">
-  <p style="background-color:white;">
-    commentbox works!
-  </p>
+<div id="commentsContainer" class="w3-ul w3-card-4">
+  <h5 id="header">COMMENTS</h5>
+
+  <!-- Avatar -->
+  <div>
+    <div class="comment_avatar"><img src="http://lorempixel.com/60/60/" alt="">
+      <input type="text" id="commentInput" class="form-control" placeholder="Add a public comment..." [(ngModel)]="commentInput" (click)="enableSubmit()" >
+    </div>
+    <div style="float:right; margin-right:25px;">
+      <button class="btn btn-default">Cancel</button>
+      <button id="submitComment" class="btn btn-primary" disabled={{isDisabled}}>Comment</button>
+    </div>
+  </div>
+  <hr style="margin-top:50px;" />
+
 </div>

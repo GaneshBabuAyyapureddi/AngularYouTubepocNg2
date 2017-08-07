@@ -1,5 +1,23 @@
 #commentsContainer {
     margin-left: 20%;
     margin-top: 10px;
-    max-width: 40%;
+    max-width: 80%;
+    background-color: white;
+    width: 80%;
+    min-height: 250px !important;
+}
+#header{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.comment_avatar{
+    margin: 10px;
+}
+#commentInput{
+   margin-right: 10px;
+    height: 50px;
+   width: 86%;
+   float: right;
+   overflow: scroll;
 }
