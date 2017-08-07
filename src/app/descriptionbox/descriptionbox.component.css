@@ -1,6 +1,34 @@
 #descriptionContainer {
     margin-left: 20%;
     margin-top: 10px;
-    min-height: 170px !important;
-    background-color:red;
+    max-width: 40%;
+    min-height: 250px !important;
+    background-color:white;
+}
+#title{
+    margin-left: 20px;
+    padding-top: 15px;
+}
+#img-des{
+    margin-left: 20px;
+    width: 55px;
+    height: 55px;
+}
+#name-des{
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+#description{    
+    margin-left: 23px;
+    margin-right: 23px;
+    font-size: 12px;
+}
+#view-like{
+    float:right; 
+    margin-top:-10px; 
+    margin-right:20px;
+}
+#navText {
+    display:inline-block;
+  vertical-align: 5px;
 }

@@ -1,5 +1,10 @@
 <div class="playlistContainer">
-<p style="background-color:purple">
-  playlist-sidebar works!
-</p>
+  <ul>
+    <li *ngFor="let video of videoList; let i = index" class="videoList" (click)="onClickVideoFromPlayList(i)">
+        <img [src]='video.thumbnailImage' style="width:150px;height:85px;float:left;margin-right:5px;margin-left:5px;margin-top:5px;">
+        <p class="titleTag">{{video.title}}</p>
+        <p class="detailTag"> {{video.uploadedBy}} </p>
+        <p class="detailTag"> {{video.noOfViews}} views </p>
+    </li>
+  </ul>
 </div>
