@@ -6,22 +6,29 @@
 
 .searchTerm {
     margin-top: 10px !important;
-    margin-left: 20% !important;
-    width: 50%;
+    margin-left:5% !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 37%;
     border: 2px solid #00B4CC;
     padding: 5px;
     height: 30px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
     outline: none;
 }
 
 .searchButton {
     margin-top: 10px;
     position: absolute;  
-    left: 808px;
+    left: 895px;
     width: 40px;
     height: 30px;
     border: 2px solid #00B4CC;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
     text-align: center;
     cursor: pointer;
  
 }
+
