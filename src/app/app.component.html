@@ -2,7 +2,7 @@
 <div id="appContainer">
   <app-titlebar></app-titlebar>
   <div id="leftContainer">
-     <app-videoplayer></app-videoplayer>
+     <app-videoplayer (childEvent) = "childData=$event"></app-videoplayer>
     <app-descriptionbox></app-descriptionbox>
     <app-commentbox></app-commentbox> 
   </div>
