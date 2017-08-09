@@ -1,5 +1,5 @@
 <div id="playerContainer">
 
   <iframe width="100%" height="360px" 
-  src="https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os" frameborder="0" allowfullscreen></iframe>
+  [src]='sanitizer.bypassSecurityTrustResourceUrl(videoUrl)' frameborder="0" allowfullscreen ></iframe>
 </div>

@@ -1,22 +1,24 @@
-import { Component, OnInit, EventEmitter} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output} from '@angular/core';
 
 
 @Component({
   selector: 'app-playlist-sidebar',
   templateUrl: './playlist-sidebar.component.html',
   styleUrls: ['./playlist-sidebar.component.css'],
-  outputs:['childEvent']
+  outputs:['playListEvent']
 })
 export class PlaylistSidebarComponent implements OnInit {
-  childEvent = new EventEmitter<string>();
+  playListEvent = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+        this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
   }
 
   onClickVideoFromPlayList(video) {
     console.log(this.videoList[video].url);
-    this.childEvent.emit(this.videoList[video].url);
+    this.playListEvent.emit(this.videoList[video].url);
+    
   } 
 
   videoList = [
