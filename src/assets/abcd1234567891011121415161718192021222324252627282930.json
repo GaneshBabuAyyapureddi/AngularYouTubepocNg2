@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Wang",
+        "icon": "",
+        "comment": "You should have told me to add formmodules",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Ahmad Al-Baqawi",
+                "icon": "",
+                "comment": "Best tutorial series for angular 2.",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 3665,
+                "dislikes": 1432
+            },
+            {
+                "username": "Dhanraj",
+                "icon": "",
+                "comment": "Hey Joatmon, great work from you. Excellent tutorials you have provided to help students like me. Keep it up bro.Thumbs up",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 365,
+                "dislikes":789
+            }
+        ],
+        "likes": 398,
+        "dislikes": 128
+    },
+    {
+        "username": "ambi",
+        "icon": "",
+        "comment": "awesome series",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 65,
+        "dislikes": 189
+    },
+    {
+        "username": " Malik",
+        "icon": "",
+        "comment": "hi i am getting error for declaring variable like any type plese help me",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 361,
+        "dislikes": 158
+    }
+]

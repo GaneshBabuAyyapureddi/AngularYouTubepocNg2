@@ -1,0 +1,48 @@
+[
+    {
+        "username": "amr ayoub",
+        "icon": "",
+        "comment": "Great tutorials , when are you going to upload the rest ?? Thanks a lot",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Neeraj K",
+                "icon": "",
+                "comment": "You are really a great tutor. Just one question: From where (source) you are getting all this? I want to study more about A2. Please do provide the links of sources",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 16,
+                "dislikes": 38
+            },
+            {
+                "username": "SKtheGEEK",
+                "icon": "",
+                "comment": "Enjoyed the entire tutorial, you have explained everything very clearly. Thanks!﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 38,
+                "dislikes": 19
+            }
+        ],
+        "likes": 91,
+        "dislikes": 28
+    },
+    {
+        "username": "Максим Граб",
+        "icon": "",
+        "comment": "great work",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 29,
+        "dislikes": 34
+    },
+    {
+        "username": "Vincent Noriega",
+        "icon": "",
+        "comment": "you are a good teacher thank you",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 32,
+        "dislikes": 29
+    }
+]

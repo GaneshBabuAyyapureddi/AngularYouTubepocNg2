@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Rose",
+        "icon": "",
+        "comment": "For anyone who is struggling with getting started, I recommend using Stackblitz",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "faseem mohammed",
+                "icon": "",
+                "comment": "Am getting following error can anyone help me on this npm install works fine and then npm start prints the log below in cmd",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 19,
+                "dislikes": 82
+            },
+            {
+                "username": "Gerardo Riot!",
+                "icon": "",
+                "comment": "Thank you, that´s help me.",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 34,
+                "dislikes": 19
+            }
+        ],
+        "likes": 28,
+        "dislikes": 19
+    },
+    {
+        "username": "deepak bhatt",
+        "icon": "",
+        "comment": "thank you its work ..",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 19,
+        "dislikes": 37
+    },
+    {
+        "username": "Ujjwal Anand",
+        "icon": "",
+        "comment": "For anyone facing errors, just delete the Subject.d.ts file in node_modules/rxjs folder. It'll work just fine without it.",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 19,
+        "dislikes": 65
+    }
+]

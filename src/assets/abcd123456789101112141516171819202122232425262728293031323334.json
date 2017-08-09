@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Malik",
+        "icon": "",
+        "comment": "why cant i add a value parameter in in the input tag?",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Siva",
+                "icon": "",
+                "comment": "Best tutorial series for angular 2",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes":12,
+                "dislikes": 18
+            },
+            {
+                "username": "Anand",
+                "icon": "",
+                "comment": "the way you describe i like it !!",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 123,
+                "dislikes":144
+            }
+        ],
+        "likes": 156,
+        "dislikes": 125
+    },
+    {
+        "username": "Diaz",
+        "icon": "",
+        "comment": "Hey.... Jejejeje.... Here a DataBinding ecosystem for help people",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 489,
+        "dislikes": 156
+    },
+    {
+        "username": "Felix",
+        "icon": "",
+        "comment": "two-way binding in frontend apps is one of the most overrated things. It causes more problems than it is worth. 99.9% of the time you are going to be using one way binding",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 159,
+        "dislikes": 963
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Wang",
+        "icon": "",
+        "comment": "*ngSwitchWhen is not working, but *ngSwitchCase is",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Vijaykumar",
+                "icon": "",
+                "comment": "yes Muna was right.. it has to be *ngSwitchCase not *ngSwitchWhen",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 54,
+                "dislikes": 96
+            },
+            {
+                "username": "Pranjal",
+                "icon": "",
+                "comment": "ngSwitchWhen will also work but only in root component",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 78,
+                "dislikes":36
+            }
+        ],
+        "likes": 489,
+        "dislikes":698
+    },
+    {
+        "username": "soni",
+        "icon": "",
+        "comment": "thanx....i should have read the commnet once before getting confused over ngWhen",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 45,
+        "dislikes": 98
+    },
+    {
+        "username": "Praveen",
+        "icon": "",
+        "comment": "Even in root component, ngswitchwhen is not working in angluar 2. it has to be ngswitchcase",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 489,
+        "dislikes": 32
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Hamzath Anees",
+        "icon": "",
+        "comment": "really great videos",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "sunil kumar",
+                "icon": "",
+                "comment": "Can you please post a video to debug typescript in vscode from chrome",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 11,
+                "dislikes": 66
+            },
+            {
+                "username": "Tuhin Paul",
+                "icon": "",
+                "comment": "watching it after exactly 1 year ! :) Am I late ",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 88,
+                "dislikes": 18
+            }
+        ],
+        "likes": 75,
+        "dislikes": 36
+    },
+    {
+        "username": "Thilani Imalka",
+        "icon": "",
+        "comment": "Really good tutorials, Thanks",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 20,
+        "dislikes": 22
+    },
+    {
+        "username": "sandhiya ranganathan",
+        "icon": "",
+        "comment": "Thanks",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 66,
+        "dislikes": 32
+    }
+]

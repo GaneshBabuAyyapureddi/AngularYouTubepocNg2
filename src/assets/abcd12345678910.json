@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Raj Thakur",
+        "icon": "",
+        "comment": "it show me error in directive directives:[TutorialsComponent] Argument of type '{ selector: string; template: string; directives: typeof TutorialsComponent[]; }' is not assignable to parameter of type 'Component'. Object literal may only specify known properties, and 'directives' does not exist in type 'Component'",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Majid Lotfi",
+                "icon": "",
+                "comment": "directives property has been removed in RC.6 You should move it to declarations property of your NgModule decorator",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 78,
+                "dislikes": 24
+            },
+            {
+                "username": "Amrutha Chenna",
+                "icon": "",
+                "comment": "can we create 2 components in one .ts file",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 56,
+                "dislikes": 25
+            }
+        ],
+        "likes": 33,
+        "dislikes": 79
+    },
+    {
+        "username": "SAI KIRAN AAKULA",
+        "icon": "",
+        "comment": "Please give solution for this error: Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)﻿",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 23,
+        "dislikes": 8
+    },
+    {
+        "username": "Serge Seva",
+        "icon": "",
+        "comment": "Please give solution for this error: Couldn't open browser ",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 19,
+        "dislikes": 10
+    }
+]

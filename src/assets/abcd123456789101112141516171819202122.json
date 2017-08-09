@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Jeetu Agrawal",
+        "icon": "",
+        "comment": "i can import eventemmiter than error can occur = ts] Module d:/STUDY/angular js/codepractice/angular2deemo/node_modules/@angular/core/index has no exported member 'EventEmmitter how to solve it pls help me",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Ahmad Al-Baqawi",
+                "icon": "",
+                "comment": "perfect explanation on how this works. I found a fix based on Angular2 update and change in structure on the directives not part of the Decorator in the following link",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 35,
+                "dislikes": 64
+            },
+            {
+                "username": "Angel Diaz",
+                "icon": "",
+                "comment": "Hi. Not working. My error is: There is no directive with exportAs set to 0. Any idea to help me????",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 42,
+                "dislikes": 21
+            }
+        ],
+        "likes": 64,
+        "dislikes": 12
+    },
+    {
+        "username": "Sylvester Lan",
+        "icon": "",
+        "comment": "Great tutorial!",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 30,
+        "dislikes": 21
+    },
+    {
+        "username": "Jose Jacob",
+        "icon": "",
+        "comment": "thank you",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 15,
+        "dislikes": 37
+    }
+]

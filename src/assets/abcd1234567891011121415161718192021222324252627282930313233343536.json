@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Xiaochen",
+        "icon": "",
+        "comment": "for the new version of angular2, ngSwitchWhen is deprecated. need to use ngSwitchCase instead ",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "soumen ",
+                "icon": "",
+                "comment": "*ngFor is not working",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 154,
+                "dislikes": 125
+            },
+            {
+                "username": "PraveV ",
+                "icon": "",
+                "comment": "Pratyush Pranjal #color? which version this hash syntax will work? I tried it didn't",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 458,
+                "dislikes":69
+            }
+        ],
+        "likes":132,
+        "dislikes":125
+    },
+    {
+        "username": "Angelina",
+        "icon": "",
+        "comment": "Update To 23/03/2017, this work for me.",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 158,
+        "dislikes": 986
+    },
+    {
+        "username": " Padhy",
+        "icon": "",
+        "comment": "This is amazing tutorial , thanks man for your good job!!",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 129,
+        "dislikes": 348
+    }
+]

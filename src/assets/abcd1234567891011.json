@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Ronak Dey",
+        "icon": "",
+        "comment": "Good tutorial, but you misunderstood the style scope. changes in global css will have scope over all same HTML tags, unless there is local css overriding the global",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Abdallah Sarhan",
+                "icon": "",
+                "comment": "Exactly, I came to reply the same",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 28,
+                "dislikes": 33
+            },
+            {
+                "username": "Lalit Kumar",
+                "icon": "",
+                "comment": "How to use Bootstrap library and material design with angular js ?﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 35,
+                "dislikes":15
+            }
+        ],
+        "likes": 39,
+        "dislikes": 32
+    },
+    {
+        "username": "SAI KIRAN AAKULA",
+        "icon": "",
+        "comment": "Please give solution for this error: Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)﻿",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 23,
+        "dislikes": 8
+    },
+    {
+        "username": "pradeep choudhary",
+        "icon": "",
+        "comment": "getting error that can't find",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 19,
+        "dislikes": 10
+    }
+]
