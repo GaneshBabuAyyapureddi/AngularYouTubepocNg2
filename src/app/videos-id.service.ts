@@ -8,12 +8,11 @@ import { VideoObject } from './video';
 @Injectable()
 export class VideoIdService{
 
-    // private _url: string = "./assets/videos.json"
+    private _videourl: string = "assets/videos.json"
     constructor(private _http: Http){} 
 
-    getVideoIdData(filenameUrl): Observable<VideoObject[]> {
-      return this._http.get(filenameUrl)
-      .map((response: Response) => <VideoObject[]> response.json())
-      .do(data => console.log(JSON.stringify(data)));
-   }
+    getVideoPlayerData(): Observable<VideoObject[]>{
+        return this._http.get(this._videourl)
+            .map((response:Response) =><VideoObject[]> response.json());
+    }
 }

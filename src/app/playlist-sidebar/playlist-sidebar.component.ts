@@ -1,15 +1,14 @@
-import { Component, OnInit, EventEmitter, Output} from '@angular/core';
-import { VideoIdService } from "../videos-id.service";
-import { VideoObject } from '../video';
-import { Http , Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { VideoIdService } from '../videos-id.service';
+import { VideoObject } from '../video-object';
+
+
 
 @Component({
   selector: 'app-playlist-sidebar',
   templateUrl: './playlist-sidebar.component.html',
   styleUrls: ['./playlist-sidebar.component.css'],
-  outputs:['playListEvent'],
+  outputs: ['playListEvent'],
   providers: [VideoIdService]
 })
 export class PlaylistSidebarComponent implements OnInit {
@@ -17,20 +16,18 @@ export class PlaylistSidebarComponent implements OnInit {
   filename = "./assets/videos.json";
 
   playListEvent = new EventEmitter<string>();
-
-  constructor(private _videoIdService: VideoIdService) { }
+  videoObj: VideoObject[];
+  constructor(private _video: VideoIdService) { }
 
   ngOnInit() {
-        this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
-        
-        this._videoIdService.getVideoIdData(this.filename)
-      .subscribe(iproducts => this.videoList = iproducts);
+    this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
+    this._video.getVideoPlayerData().subscribe(videoObj => this.videoObj = videoObj);
   }
 
   onClickVideoFromPlayList(video) {
-    console.log(this.videoList[video].url);
-    this.playListEvent.emit(this.videoList[video].url);
-    
-  } 
+    console.log(this.videoObj[video].url);
+    this.playListEvent.emit(this.videoObj[video].url);
+
+  }
 
 }
