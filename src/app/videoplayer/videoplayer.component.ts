@@ -1,7 +1,6 @@
 import { Input, Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
-
 @Component({
   selector: 'app-videoplayer',
   templateUrl: './videoplayer.component.html',
