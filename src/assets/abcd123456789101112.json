@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Mike Moretti",
+        "icon": "",
+        "comment": "Attributes vs. Properties: Attributes are defined by HTML. Properties are defined by DOM",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Daniyal Nasir",
+                "icon": "",
+                "comment": "Is it just me or he hasn't mention how to create and link the tutorials.component.ts file",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 28,
+                "dislikes": 33
+            },
+            {
+                "username": "Rahul Kushwaha",
+                "icon": "",
+                "comment": "when i put src in [ ] and assign imgLink to it. It does not show me any image in the browser it just displays the hello world and tutorials from jotman just fine but image is not there",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 24,
+                "dislikes":11
+            }
+        ],
+        "likes": 32,
+        "dislikes": 65
+    },
+    {
+        "username": "Felix T-Rex",
+        "icon": "",
+        "comment": "look, i really like this, anyone have a problem with that",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 54,
+        "dislikes": 28
+    },
+    {
+        "username": "Diwakar Serala",
+        "icon": "",
+        "comment": "In my case when I put the src in [ ] the console returns and error and webpage only shows loading.... And when I use src without the [ ] if works fine any idea why???",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 26,
+        "dislikes": 28
+    }
+]

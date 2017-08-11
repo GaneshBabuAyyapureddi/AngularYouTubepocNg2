@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Felix T-Rex",
+        "icon": "",
+        "comment": "why is the 'switch' in square brackets? in the ng documentaion they use the '*' instead ",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Łukasz Patro",
+                "icon": "",
+                "comment": "You are reading wrong documentation. AngularJS is not the same as Angular2",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 36,
+                "dislikes": 45
+            },
+            {
+                "username": "Ahmad Al-Baqawi",
+                "icon": "",
+                "comment": "good question, the reason is that your testing the property value of that instance, which is red...",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 89,
+                "dislikes":87
+            }
+        ],
+        "likes": 56,
+        "dislikes":21
+    },
+    {
+        "username": "Leonida Koech",
+        "icon": "",
+        "comment": "@ time 1.03, you didn't close the <p> tag",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 47,
+        "dislikes": 57
+    },
+    {
+        "username": "Ercan Akkök",
+        "icon": "",
+        "comment": "*ngIf does not show or hide your html elements. It CREATES or REMOVES your elements. These are different things",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 35,
+        "dislikes": 25
+    }
+]

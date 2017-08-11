@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Faiyaz Alam",
+        "icon": "",
+        "comment": "Hi is there any way to read data from properties File in angular 2",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Sowjanya Korumilli",
+                "icon": "",
+                "comment": "Nice tutorial  for beginners. Good work. Can you upload more video's with typescript.",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 87,
+                "dislikes": 65
+            },
+            {
+                "username": "Souvik Banerjee",
+                "icon": "",
+                "comment": "How to use classes from stylesheet?",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 25,
+                "dislikes":39
+            }
+        ],
+        "likes": 54,
+        "dislikes": 31
+    },
+    {
+        "username": "Nishant soni",
+        "icon": "",
+        "comment": "im getting the right output in browser, but in editor it is giving red line under value argument.",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 36,
+        "dislikes": 25
+    },
+    {
+        "username": "Angel Diaz",
+        "icon": "",
+        "comment": "Thanks. Excellent. I receive a error with this code. In Shell appear: parameter implicitly has an 'any' . Can you help me????",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 39,
+        "dislikes": 72
+    }
+]

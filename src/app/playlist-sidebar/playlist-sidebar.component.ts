@@ -1,171 +1,30 @@
-import { Component, OnInit, EventEmitter, Output} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { VideoIdService } from '../videos-id.service';
+import { VideoObject } from '../video-object';
+
 
 
 @Component({
   selector: 'app-playlist-sidebar',
   templateUrl: './playlist-sidebar.component.html',
   styleUrls: ['./playlist-sidebar.component.css'],
-  outputs:['playListEvent']
+  outputs: ['playListEvent'],
+  providers: [VideoIdService]
 })
 export class PlaylistSidebarComponent implements OnInit {
   playListEvent = new EventEmitter<string>();
-  constructor() { }
+  videoObj: VideoObject[];
+  constructor(private _video: VideoIdService) { }
 
   ngOnInit() {
-        this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
+    this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
+    this._video.getVideoPlayerData().subscribe(videoObj => this.videoObj = videoObj);
   }
 
   onClickVideoFromPlayList(video) {
-    console.log(this.videoList[video].url);
-    this.playListEvent.emit(this.videoList[video].url);
-    
-  } 
+    console.log(this.videoObj[video].url);
+    this.playListEvent.emit(this.videoObj[video].url);
 
-  videoList = [
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 408286,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hasina"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 785612,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hollywood"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 125,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Traversy Media"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 408286,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hasina"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 785612,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hollywood"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 125,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Traversy Media"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 408286,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hasina"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 785612,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hollywood"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 125,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Traversy Media"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 408286,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hasina"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 785612,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Hollywood"
-    },
-    {
-      "id": "abcd1234",
-      "url": "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os",
-      "description": "Learn Webpack 2 - what it is, how it works and how to use it!",
-      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
-      "noOfLikes": 5689,
-      "noOfDislikes": 45789,
-      "noOfViews": 125,
-      "dateCreated": "12/05/1990",
-      "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
-      "uploadedBy": "Traversy Media"
-    }
-  ];
+  }
 
 }

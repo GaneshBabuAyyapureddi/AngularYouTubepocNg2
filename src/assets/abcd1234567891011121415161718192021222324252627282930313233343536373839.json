@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Mondal",
+        "icon": "",
+        "comment": " Replace not working..",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Sun",
+                "icon": "",
+                "comment": "Replace pipe is completed removed from angular",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 129,
+                "dislikes": 88
+            },
+            {
+                "username": "Nishant",
+                "icon": "",
+                "comment": "hello... replace is not working, even i copied everything, dont know whats happening",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 369,
+                "dislikes": 127
+            }
+        ],
+        "likes": 137,
+        "dislikes": 585
+    },
+    {
+        "username": "Mohite",
+        "icon": "",
+        "comment": "Awesome ! My Mouse Click Thumbs Up !",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 269,
+        "dislikes": 369
+    },
+    {
+        "username": "Movin",
+        "icon": "",
+        "comment": "Enjoyed the entire tutorial, you have explained everything very clearly. Thanks!",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 45,
+        "dislikes":119
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Hari",
+        "icon": "",
+        "comment": "excellent overview",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Edman Edward",
+                "icon": "",
+                "comment": "Good video with sample code, Thanks﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 32,
+                "dislikes": 69
+            },
+            {
+                "username": "Petter",
+                "icon": "",
+                "comment": "Good One",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes":15,
+                "dislikes": 31
+            }
+        ],
+        "likes":65,
+        "dislikes": 32
+    },
+    {
+        "username": "Lucy Ramu",
+        "icon": "",
+        "comment": "Great tutorial!! When is the next video on webpack ?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 510,
+        "dislikes": 87
+    },
+    {
+        "username": "susmitha",
+        "icon": "",
+        "comment": "what text editor is that?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 236,
+        "dislikes": 189
+    }
+]

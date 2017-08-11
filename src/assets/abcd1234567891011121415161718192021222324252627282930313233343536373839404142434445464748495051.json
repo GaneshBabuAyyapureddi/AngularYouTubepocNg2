@@ -1,0 +1,48 @@
+[
+    {
+        "username": "ARanjmit an",
+        "icon": "",
+        "comment": " There is no directive with exportAs set to 0",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Mundo ",
+                "icon": "",
+                "comment": "You're right",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 14,
+                "dislikes": 12
+            },
+            {
+                "username": "Dhan",
+                "icon": "",
+                "comment": "Excellent job man...",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 12,
+                "dislikes":125
+            }
+        ],
+        "likes": 69,
+        "dislikes":65
+    },
+    {
+        "username": "Jesus",
+        "icon": "",
+        "comment": "Why did not you use @Input ?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 25,
+        "dislikes": 36
+    },
+    {
+        "username": "Kel",
+        "icon": "",
+        "comment": "i also ask? ,i think because he use angular 2 its old typing style",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 36,
+        "dislikes": 54
+    }
+]

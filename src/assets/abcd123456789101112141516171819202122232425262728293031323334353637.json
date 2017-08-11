@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Rishab",
+        "icon": "",
+        "comment": "Error like the following occurs 15 npm ERR! code ELIFECYCLE",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Sachin Mehta",
+                "icon": "",
+                "comment": "thanks a lot. had the same issue",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 369,
+                "dislikes": 137
+            },
+            {
+                "username": "Sylvester ",
+                "icon": "",
+                "comment": "Your templates are well made and clearly commented. Thanks for your great explanations!",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 789,
+                "dislikes": 162
+            }
+        ],
+        "likes": 458,
+        "dislikes": 116
+    },
+    {
+        "username": "Reddy",
+        "icon": "",
+        "comment": "Hi Sylvester Lan. From where did you get the template? and can you please provide me the link so that I can download the link",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 12,
+        "dislikes": 148
+    },
+    {
+        "username": "Lan",
+        "icon": "",
+        "comment": "I think it's here:",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 369,
+        "dislikes":141
+    }
+]

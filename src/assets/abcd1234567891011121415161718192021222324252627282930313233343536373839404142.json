@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Lan",
+        "icon": "",
+        "comment": "Is there a benefit to using #(id).value and passing it rather than using ngModel? Wouldn't that spare you the need for the keyUp dummy event?",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Yên",
+                "icon": "",
+                "comment": "Hi, i followed up your steps but only getting data from Parent works, i can't get data back from Child component. The onchange functions works but not sure why the Parent component can't retrieve the childData",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 12,
+                "dislikes": 32
+            },
+            {
+                "username": "Innotical",
+                "icon": "",
+                "comment": "dude you're great. Best tutes. keep up the good work",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 25,
+                "dislikes":36
+            }
+        ],
+        "likes": 32,
+        "dislikes":98
+    },
+    {
+        "username": "KarN",
+        "icon": "",
+        "comment": "may i know why you have specied event handler in outputs and not while doing an inputs ?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 32,
+        "dislikes": 78
+    },
+    {
+        "username": "Raghu pola",
+        "icon": "",
+        "comment": "these video's are not developed with latest Angular-CLI right?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 46,
+        "dislikes": 74
+    }
+]

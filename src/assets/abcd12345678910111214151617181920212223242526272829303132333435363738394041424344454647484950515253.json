@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Raga",
+        "icon": "",
+        "comment": "Hi author, I tried to find the template folder form your git-hub but I did not found it. Can you please provide me a good link where I can download it directly. I would be thankful to you if you help me",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Femin",
+                "icon": "",
+                "comment": "same error occur here..",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 12,
+                "dislikes": 36
+            },
+            {
+                "username": "AJAMN",
+                "icon": "",
+                "comment": "Why not just create a tutorial on how to setup everything that's needed to get started with Angular?? ",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 78,
+                "dislikes": 98
+            }
+        ],
+        "likes": 789,
+        "dislikes": 963
+    },
+    {
+        "username": "Vijayan Rama",
+        "icon": "",
+        "comment": "template not available",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 154,
+        "dislikes":112
+    },
+    {
+        "username": "pranam ",
+        "icon": "",
+        "comment": "getting error that cannot find module",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 58,
+        "dislikes": 98
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Sherif A",
+        "icon": "",
+        "comment": "You channel is back!! I love your tutorials",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Deepak",
+                "icon": "",
+                "comment": "I have followed Lynda tutorials also on Angular 2. But this tutorial series is much better than that",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 12,
+                "dislikes": 36
+            },
+            {
+                "username": "suresh boddu",
+                "icon": "",
+                "comment": "very nice explanation.. Could you please tell me which versions of node js and visual studio code we have to use to run smoothly.. i am facing lot of issues to run﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 12,
+                "dislikes":18
+            }
+        ],
+        "likes": 456,
+        "dislikes": 325
+    },
+    {
+        "username": "Ahmed Musawir",
+        "icon": "",
+        "comment": "Thank you for a great series ... esp the Animation parts ... there is none like this out there ... Plz give us more with Angular2 + Firebase ... will be forever grateful ... thx in advanc",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 10,
+        "dislikes": 12
+    },
+    {
+        "username": "Ankur Mishra",
+        "icon": "",
+        "comment": "Really This is good for us and I want to say thank bro",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 70,
+        "dislikes": 19
+    }
+]

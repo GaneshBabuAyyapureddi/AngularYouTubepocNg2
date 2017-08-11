@@ -1,0 +1,48 @@
+[
+    {
+        "username": "MrManidip",
+        "icon": "",
+        "comment": "This is giving some error. Please advise how to fix this",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "zeeshan ali",
+                "icon": "",
+                "comment": "remove the node_modules using rm node-modules, npm install and then try again it should work. Also what I found the package.json has some issues form this tutorial. You need to include FormsModule ",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 52,
+                "dislikes": 13
+            },
+            {
+                "username": "Suman kumar Panda",
+                "icon": "",
+                "comment": "In this final template npm start command is showing some error.By running npm run lite it is working.So i changed in package.json also but npm start is not working.Please give me a solution.",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 38,
+                "dislikes": 39
+            }
+        ],
+        "likes": 75,
+        "dislikes": 95
+    },
+    {
+        "username": "Sorna Raja Prabhu S",
+        "icon": "",
+        "comment": "After such changes i am not getting errors , but it is not running in my browser.why.....?﻿",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 39,
+        "dislikes": 88
+    },
+    {
+        "username": "Moiz Ajmal",
+        "icon": "",
+        "comment": "amazing tutorial and works 100% perfect !﻿",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 65,
+        "dislikes": 21
+    }
+]

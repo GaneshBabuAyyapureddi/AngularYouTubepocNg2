@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Jazzy Hao",
+        "icon": "",
+        "comment": "hands down for the best video that using human language to explain﻿",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Lalit Kumar",
+                "icon": "",
+                "comment": "great video tutorial for angular js . gud job...﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 65,
+                "dislikes": 16
+            },
+            {
+                "username": "Abdallah Sarhan",
+                "icon": "",
+                "comment": "thanks for this amazing series!",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 26,
+                "dislikes": 45
+            }
+        ],
+        "likes": 28,
+        "dislikes": 36
+    },
+    {
+        "username": "Sai Krishna",
+        "icon": "",
+        "comment": "finally i got full good videos for angular 2. Thanks a lot. Good explanation",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 89,
+        "dislikes": 22
+    },
+    {
+        "username": "Serge Seva",
+        "icon": "",
+        "comment": "Thanks, Vishwas! Sorry, it's not clear where/how class is defined and then bound to @Component decorator? Cheers!",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 9,
+        "dislikes": 20
+    }
+]

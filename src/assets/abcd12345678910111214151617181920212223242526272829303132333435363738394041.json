@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Pattanayak",
+        "icon": "",
+        "comment": "can you tell which approach should i use to apply css, class and style binding(described in tutorial 9) or attribute binding.",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Belwal",
+                "icon": "",
+                "comment": "very clearly described..thanks ;-)﻿",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 11,
+                "dislikes": 15
+            },
+            {
+                "username": "Manneh",
+                "icon": "",
+                "comment": "Your tutorials are really smooth to understand..... smile:",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 88,
+                "dislikes":45
+            }
+        ],
+        "likes": 234,
+        "dislikes":125
+    },
+    {
+        "username": "Patil",
+        "icon": "",
+        "comment": "once again very nice tutorial.....i am a student and i am confused should i take angular 1.x or angular 2?, could you please suggest?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 32,
+        "dislikes": 96
+    },
+    {
+        "username": "Balu",
+        "icon": "",
+        "comment": "Although it is still in beta, go with Angular 2.",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes":65,
+        "dislikes": 89
+    }
+]s
