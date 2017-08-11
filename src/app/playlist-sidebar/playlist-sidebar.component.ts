@@ -12,6 +12,9 @@ import { VideoObject } from '../video-object';
   providers: [VideoIdService]
 })
 export class PlaylistSidebarComponent implements OnInit {
+  videoList: VideoObject[];
+  filename = "./assets/videos.json";
+
   playListEvent = new EventEmitter<string>();
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }

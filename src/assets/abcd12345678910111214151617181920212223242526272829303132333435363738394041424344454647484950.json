@@ -1,0 +1,48 @@
+[
+    {
+        "username": "Ranjan",
+        "icon": "",
+        "comment": "getting an error : There is no directive with exportAs set to 0",
+        "noOfReplies": 2,
+        "replies": [
+            {
+                "username": "Mundo ",
+                "icon": "",
+                "comment": "You're right",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes":157,
+                "dislikes": 148
+            },
+            {
+                "username": "Dhanraj",
+                "icon": "",
+                "comment": "It worked.Excellent job man...",
+                "noOfReplies": 0,
+                "replies": [],
+                "likes": 369,
+                "dislikes":23
+            }
+        ],
+        "likes": 98,
+        "dislikes":69
+    },
+    {
+        "username": "Jesus",
+        "icon": "",
+        "comment": "Why did not you use @Input and @Output Decorator?",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 125,
+        "dislikes": 369
+    },
+    {
+        "username": "Kelsany",
+        "icon": "",
+        "comment": "i also ask? ,i think because he use angular 2 its old typing style",
+        "noOfReplies": 0,
+        "replies": [],
+        "likes": 458,
+        "dislikes": 78
+    }
+]
