@@ -4,12 +4,43 @@
   <!-- Avatar -->
   <div>
     <div class="comment_avatar"><img src="http://lorempixel.com/60/60/" alt="">
-      <input type="text" id="commentInput" class="form-control" placeholder="Add a public comment..." [(ngModel)]="commentInput" (click)="enableSubmit()" >
+      <input type="text" id="commentInput" class="form-control" placeholder="Add a public comment..." [(ngModel)]="commentInput"
+        (click)="enableSubmit()">
     </div>
     <div style="float:right; margin-right:25px;">
       <button class="btn btn-default">Cancel</button>
       <button id="submitComment" class="btn btn-primary" disabled={{isDisabled}}>Comment</button>
     </div>
+  </div>
+  <div>
+    <ul *ngFor="let comment of commentList" class="w3-padding-16">
+      <img [src]=comment.icon class="w3-left w3-rounded w3-border w3-margin-right" style="width:60px; height:60px; margin-left: 10px;">
+      <li>
+        <div style="color:#129CEF; font-weight: bold;">{{comment.username}}</div>
+        <div style="margin-bottom: 5px;">{{comment.comment}}</div>
+        <div class="w3-left" style="color:grey;">Reply . <span style="color:#129CEF;">{{comment.likes}}</span>
+          <i class="glyphicon glyphicon-thumbs-up" id="icon-like-dis"></i>
+          <i class="glyphicon glyphicon-thumbs-down" id="icon-like-dis"></i>
+        </div>
+        <div >
+          <div *ngIf="comment.noOfReplies>0" style="margin-top: 40px;">
+            <ul *ngFor="let reply of comment.replies" class="w3-ul">
+              <div style="margin-top:30px; margin-left:70px;">
+                <img [src]=reply.icon class="w3-left w3-rounded w3-border w3-margin-right" style="width:50px; height:50px;">
+                <li>
+                  <div style="color:#129CEF; font-weight: bold;">{{reply.username}}</div>
+                  <div style="margin-bottom: 5px;">{{reply.comment}}</div>
+                   <div class="w3-left" style="color:grey; margin-left:50px;">Reply . <span style="color:#129CEF;">{{reply.likes}}</span>
+                    <i class="glyphicon glyphicon-thumbs-up" id="icon-like-dis"></i>
+                    <i class="glyphicon glyphicon-thumbs-down" id="icon-like-dis"></i>
+                  </div> 
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
   <hr style="margin-top:50px;" />
 
