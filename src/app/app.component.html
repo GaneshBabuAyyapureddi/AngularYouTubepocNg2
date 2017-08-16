@@ -1,13 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="appContainer">
   <app-titlebar></app-titlebar>
-<<<<<<< HEAD
   <div id="leftContainer" *ngIf="show">
-     <app-videoplayer videoUrl={{childData}}></app-videoplayer>
-=======
-  <div id="leftContainer">
+     <!-- <app-videoplayer videoUrl={{childData}}></app-videoplayer>
+  <div id="leftContainer"> -->
      <app-videoplayer [videoUrl]="childData"></app-videoplayer>
->>>>>>> 58201f7d9162b041b19395d9d91f26f89b06be12
     <app-descriptionbox></app-descriptionbox>
     <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
   </div>
