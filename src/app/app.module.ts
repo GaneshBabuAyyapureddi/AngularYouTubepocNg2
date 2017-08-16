@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { EJAngular2Module } from 'ej-angular2'; 
 
 import { AppComponent } from './app.component';
 import { TitlebarComponent } from './titlebar/titlebar.component';
@@ -22,7 +21,7 @@ import { CommentboxComponent } from './commentbox/commentbox.component';
     CommentboxComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpModule,EJAngular2Module.forRoot()
+    BrowserModule, FormsModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

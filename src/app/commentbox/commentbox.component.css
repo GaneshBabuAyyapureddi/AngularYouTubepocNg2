@@ -29,3 +29,9 @@
     cursor: hand;
     margin-left: 5px; 
 }
+#commentUsername{
+    color:#129CEF; font-weight: bold;
+}
+#comment{
+    margin-bottom: 5px;
+}

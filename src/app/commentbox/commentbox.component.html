@@ -16,8 +16,8 @@
     <ul *ngFor="let comment of commentList" class="w3-padding-16">
       <img [src]=comment.icon class="w3-left w3-circle w3-border w3-margin-right" style="width:60px; height:60px; margin-left: 10px;">
       <li>
-        <div style="color:#129CEF; font-weight: bold;font-family:'Helvetica Neue Light'">{{comment.username}}</div>
-        <div style="margin-bottom: 5px;font-family:'Helvetica Neue Light';">{{comment.comment}}</div>
+        <div id="commentUsername" style="font-family:'Helvetica Neue Light'">{{comment.username}}</div>
+        <div id="comment" style="font-family:'Helvetica Neue Light';">{{comment.comment}}</div>
         <div class="w3-left" style="color:grey;font-family:'Helvetica Neue Light';">Reply . <span style="color:#129CEF;">{{comment.likes}}</span>
           <i class="glyphicon glyphicon-thumbs-up" id="icon-like-dis"></i>
           <i class="glyphicon glyphicon-thumbs-down" id="icon-like-dis"></i>
@@ -28,8 +28,8 @@
               <div style="margin-top:30px; margin-left:70px;">
                 <img [src]=reply.icon class="w3-left w3-circle w3-border w3-margin-right" style="width:50px; height:50px;">
                 <li>
-                  <div style="color:#129CEF; font-weight: bold;">{{reply.username}}</div>
-                  <div style="margin-bottom: 5px;">{{reply.comment}}</div>
+                  <div id="commentUsername">{{reply.username}}</div>
+                  <div id="comment">{{reply.comment}}</div>
                    <div class="w3-left" style="color:grey; margin-left:50px;">Reply . <span style="color:#129CEF;">{{reply.likes}}</span>
                     <i class="glyphicon glyphicon-thumbs-up" id="icon-like-dis"></i>
                     <i class="glyphicon glyphicon-thumbs-down" id="icon-like-dis"></i>
