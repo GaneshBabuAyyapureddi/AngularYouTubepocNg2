@@ -8,22 +8,22 @@ import { VideoObject } from '../video-object';
   selector: 'app-playlist-sidebar',
   templateUrl: './playlist-sidebar.component.html',
   styleUrls: ['./playlist-sidebar.component.css'],
-  outputs: ['playListEvent'],
+  //outputs: ['playListEvent'],
   providers: [VideoIdService]
 })
 export class PlaylistSidebarComponent implements OnInit {
-  playListEvent = new EventEmitter<string>();
+  @Output() playListEvent = new EventEmitter<VideoObject>();
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }
 
   ngOnInit() {
-    this.playListEvent.emit("https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os");
     this._video.getVideoPlayerData().subscribe(videoObj => this.videoObj = videoObj);
+    //this.playListEvent.emit(this.videoObj[0]);
   }
 
   onClickVideoFromPlayList(video) {
-    console.log(this.videoObj[video].url);
-    this.playListEvent.emit(this.videoObj[video].url);
+    console.log(this.videoObj[video]);
+    this.playListEvent.emit(this.videoObj[video]);
 
   }
 

@@ -1,4 +1,5 @@
 import { Component,Input } from '@angular/core';
+import { VideoObject } from './video-object';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,21 @@ import { Component,Input } from '@angular/core';
 
 })
 export class AppComponent {
-  public childData;
+  public childData : string;
+  public selectedVideoID : string;
+  public selectedVideo: VideoObject;
   ngOnInit() {
+    console.log(this.childData);
+    this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
+}
+
+getVideo(video){
+    console.log('In app component');
+  
+  this.childData = video.url;
+  this.selectedVideo = video;
+  this.selectedVideoID = video.id;
+  console.log(this.selectedVideo.id);
 }
   
 }

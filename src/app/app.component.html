@@ -2,11 +2,12 @@
 <div id="appContainer">
   <app-titlebar></app-titlebar>
   <div id="leftContainer">
-     <app-videoplayer videoUrl={{childData}}></app-videoplayer>
+     <app-videoplayer [videoUrl]="childData"></app-videoplayer>
     <app-descriptionbox></app-descriptionbox>
-    <app-commentbox></app-commentbox> 
+    <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
   </div>
   <div id="rightContainer">
-    <app-playlist-sidebar (playListEvent) = "childData=$event"></app-playlist-sidebar>
+    <app-playlist-sidebar (playListEvent) = "getVideo($event)"></app-playlist-sidebar>
   </div>
-</div>
+  
+</div>   
