@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="appContainer">
   <app-titlebar></app-titlebar>
-  <div id="leftContainer">
+  <div id="leftContainer" *ngIf="show">
      <app-videoplayer videoUrl={{childData}}></app-videoplayer>
     <app-descriptionbox></app-descriptionbox>
     <app-commentbox></app-commentbox> 

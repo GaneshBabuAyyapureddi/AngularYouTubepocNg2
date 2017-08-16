@@ -10,7 +10,10 @@ import { CommentService } from './commentbox/comment.service';
 })
 export class AppComponent {
   public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
+  show: boolean = true;
+ 
   ngOnInit() {
-}
-  
+    this.show = false;    
+  }
+
 }
