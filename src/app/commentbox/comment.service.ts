@@ -9,7 +9,7 @@ import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class CommentService{
-    private _url: string="/assets/abcd1234.json";
+    private _url: string="/assets/CommentsJson/abcd1234.json";
     constructor(private _http: Http){}
     getComments(){
         return this._http.get(this._url)
