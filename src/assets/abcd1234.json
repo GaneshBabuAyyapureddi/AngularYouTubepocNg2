@@ -1,13 +1,13 @@
 [
     {
         "username": "Harry",
-        "icon": "",
+        "icon": "https://www.gstatic.com/webp/gallery3/2.png",
         "comment": "excellent overview",
         "noOfReplies": 2,
         "replies": [
             {
                 "username": "Edman",
-                "icon": "",
+                "icon": "https://www.gstatic.com/webp/gallery3/1.png",
                 "comment": "Very good video with sample code, Thanks﻿",
                 "noOfReplies": 0,
                 "replies": [],
@@ -16,7 +16,7 @@
             },
             {
                 "username": "Petter Pan",
-                "icon": "",
+                "icon": "https://www.gstatic.com/webp/gallery3/5.png",
                 "comment": "Good One",
                 "noOfReplies": 0,
                 "replies": [],
@@ -29,7 +29,7 @@
     },
     {
         "username": "Lucy",
-        "icon": "",
+        "icon": "https://www.gstatic.com/webp/gallery3/3.png",
         "comment": "Great tutorial!! When is the next video on webpack ?",
         "noOfReplies": 0,
         "replies": [],
@@ -38,7 +38,7 @@
     },
     {
         "username": "Susan",
-        "icon": "",
+        "icon": "https://www.gstatic.com/webp/gallery3/4.png",
         "comment": "what text editor is that?",
         "noOfReplies": 0,
         "replies": [],

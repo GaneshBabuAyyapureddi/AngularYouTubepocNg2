@@ -13,6 +13,10 @@ import { VideoObject } from '../video-object';
 })
 export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
+  videoList: VideoObject[];
+  filename = "./assets/videos.json";
+
+  // playListEvent = new EventEmitter<string>();
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }
 

@@ -1,19 +1,27 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CommentService } from './comment.service';
 
 @Component({
   selector: 'app-commentbox',
   templateUrl: './commentbox.component.html',
-  styleUrls: ['./commentbox.component.css']
+  styleUrls: ['./commentbox.component.css'],
+  providers: [CommentService]
+
 })
 export class CommentboxComponent implements OnInit {
   @Input() videoID:string;
   public commentInput : String ="";
-  public isDisabled : boolean = false;
-  constructor() { }
+
+  public isDisabled : boolean = true;
+  errorMsg : String;
+  commentList = [];
+  constructor(private _commentService : CommentService) { }
 
   ngOnInit() {
-     console.log ('in ng on init comment component' + this.videoID);
-     
+
+   this._commentService.getComments().subscribe(resCommentData => this.commentList = resCommentData
+,resCommentError => this.errorMsg = resCommentError);
+console.log ('in ng on init comment component' + this.videoID);
   }
   enableSubmit(){
     if(this.commentInput.length>0){

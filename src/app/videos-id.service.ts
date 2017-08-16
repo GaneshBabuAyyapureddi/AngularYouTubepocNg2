@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/do';
 import { VideoObject } from './video-object';
 import { VideoCommentModel } from './video-comments-model';
+import {Observable} from 'rxjs/Rx';
+// import { VideoObject } from './video';
 
 @Injectable()
 export class VideoIdService{

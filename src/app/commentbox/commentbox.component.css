@@ -21,3 +21,11 @@
    float: right;
    overflow: scroll;
 }
+#icon-like-dis{
+    font-size:15px;
+    margin-right:0px; 
+    vertical-align: left;
+    cursor: pointer; 
+    cursor: hand;
+    margin-left: 5px; 
+}
