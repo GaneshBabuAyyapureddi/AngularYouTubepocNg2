@@ -25,6 +25,7 @@ export class PlaylistSidebarComponent implements OnInit {
   onClickVideoFromPlayList(position) {
     console.log(this.videoObj[position].url);
     console.log(this.videoObj[position].type);
+    sessionStorage.setItem('selectedPos', position);
     this.playListEvent.emit(this.videoObj[position]);
   }
 

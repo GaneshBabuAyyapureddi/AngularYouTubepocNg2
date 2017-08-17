@@ -23,6 +23,7 @@ export class AppComponent {
     this.selectedVideoID = selectedVideo.id;
     console.log(selectedVideo.id);
     console.log(selectedVideo.type);
+    console.log(sessionStorage.getItem('selectedPos'));
     if (selectedVideo.type == "video") {
       this.show = true;
     } else {
