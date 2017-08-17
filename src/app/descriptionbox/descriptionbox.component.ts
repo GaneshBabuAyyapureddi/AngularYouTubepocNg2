@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { VideoObject } from '../video-object';
 
 @Component({
   selector: 'app-descriptionbox',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./descriptionbox.component.css']
 })
 export class DescriptionboxComponent implements OnInit {
-
+  @Input() videoObject:VideoObject;
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(this.videoObject);
   }
 
 }

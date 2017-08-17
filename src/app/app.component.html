@@ -5,7 +5,7 @@
      <!-- <app-videoplayer videoUrl={{childData}}></app-videoplayer>
   <div id="leftContainer"> -->
      <app-videoplayer [videoUrl]="childData"></app-videoplayer>
-    <app-descriptionbox></app-descriptionbox>
+    <app-descriptionbox [videoObject]=selectedVideo></app-descriptionbox>
     <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
   </div>
   <div id="rightContainer">

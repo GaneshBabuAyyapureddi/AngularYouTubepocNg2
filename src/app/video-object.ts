@@ -10,4 +10,5 @@ export interface VideoObject {
     thumbnailImage: string;
     uploadedBy: string;
     type: string;
+    description: string;
 }
