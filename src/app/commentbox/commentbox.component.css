@@ -29,3 +29,40 @@
     cursor: hand;
     margin-left: 5px; 
 }
+#commentUsername{
+    color:#129CEF; 
+    font-weight: bold;
+    font-family:'Helvetica Neue Light';
+}
+#comment{
+    margin-bottom: 5px;
+    font-family:'Helvetica Neue Light';
+}
+#commentIcon{
+    width:60px; 
+    height:60px; 
+    margin-left: 10px;
+}
+#replyIcon{
+    width:50px; 
+    height:50px;
+}
+#replyLikes{
+    color:#129CEF;
+}
+#noOfReplies{
+    margin-top: 40px;
+}
+#commentReplyTxt{
+    color:grey;
+    font-family:'Helvetica Neue Light';
+}
+#replyItem{
+    margin-top:30px; 
+    margin-left:70px;
+}
+#replyTxt{
+    color:grey;
+    font-family:'Helvetica Neue Light';
+    margin-left: 50px;
+}
