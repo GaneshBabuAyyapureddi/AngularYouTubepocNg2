@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VideoObject } from './video-object';
 import { CommentService } from './commentbox/comment.service';
 
@@ -9,28 +9,25 @@ import { CommentService } from './commentbox/comment.service';
 })
 export class AppComponent {
   show: boolean = true;
-  public childData : string;
-  public selectedVideoID : string;
-  public selectedVideo: VideoObject;
-  // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
-  ngOnInit() {
-    console.log(this.childData);
-    this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
-    this.show = true;   
-}
+  public childData: string;
+  public selectedVideoID: string;
 
-getVideo(video){
-  console.log('In app component');  
-  this.childData = video.url;
-  this.selectedVideo = video;
-  this.selectedVideoID = video.id;
-  console.log(this.selectedVideo.id);
-  console.log(this.selectedVideo.type);
-  if(this.selectedVideo.type == "video"){
-    this.show = true; 
-  }else{
-    this.show = false; 
+  ngOnInit() {
+    this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
+    this.show = true;
   }
-}
-  
+
+  getVideo(selectedVideo) {
+    console.log('In app component');
+    this.childData = selectedVideo.url;
+    this.selectedVideoID = selectedVideo.id;
+    console.log(selectedVideo.id);
+    console.log(selectedVideo.type);
+    if (selectedVideo.type == "video") {
+      this.show = true;
+    } else {
+      this.show = false;
+    }
+  }
+
 }

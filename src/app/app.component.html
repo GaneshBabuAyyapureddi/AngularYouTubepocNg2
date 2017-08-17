@@ -2,14 +2,19 @@
 <div id="appContainer">
   <app-titlebar></app-titlebar>
   <div id="leftContainer" *ngIf="show">
-     <!-- <app-videoplayer videoUrl={{childData}}></app-videoplayer>
+    <!-- <app-videoplayer videoUrl={{childData}}></app-videoplayer>
   <div id="leftContainer"> -->
-     <app-videoplayer [videoUrl]="childData"></app-videoplayer>
+    <app-videoplayer [videoUrl]="childData"></app-videoplayer>
     <app-descriptionbox></app-descriptionbox>
-    <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
+    <app-commentbox [videoID]="selectedVideoID"></app-commentbox>
+  </div>
+  <div id="docContainer" *ngIf="!show">
+      <object type="text/html" id="objectContainer"
+        data="http://tamil.oneindia.com/news/india/ariyalur-student-anitha-brother-says-if-neet-based-admission-granted-her-sister-293003.html">
+      </object>
   </div>
   <div id="rightContainer">
-    <app-playlist-sidebar (playListEvent) = "getVideo($event)"></app-playlist-sidebar>
+    <app-playlist-sidebar (playListEvent)="getVideo($event)"></app-playlist-sidebar>
   </div>
-  
-</div>   
+
+</div>
