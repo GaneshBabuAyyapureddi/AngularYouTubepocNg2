@@ -9,7 +9,9 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class VideoIdService {
 
-    private _videoIDUrl: string = "assets/";
+    // private _videourl: string = "assets/videos.json"
+     private _videoIDUrl: string = "assets/CommentsJson/";
+ 
     // private _videourl: string = "assets/videos.json"
     private _videourl: string = "assets/videos_new.json"
 
@@ -20,15 +22,16 @@ export class VideoIdService {
             .map((response: Response) => <VideoObject[]>response.json())
             .catch(this._errorHandler);
     }
+  
 
-    getComments(fileName): Observable<VideoCommentModel[]> {
-        // this._videoIDUrl = this._videoIDUrl + fileName + "."+ "json";
-        console.log("filename :" + fileName);
-        console.log("VideoIdurl is :" + this._videoIDUrl);
-        return this._http.get(fileName).map((response: Response) => <VideoCommentModel[]>response.json()).catch(this._errorHandler);
-
-    }
-    _errorHandler(error: Response) {
+   getComments(fileName):Observable<VideoCommentModel[]>{
+        this._videoIDUrl = this._videoIDUrl + fileName + "."+ "json";
+         console.log ("filename :"+ fileName);
+        console.log ("VideoIdurl is :"+ this._videoIDUrl);
+    return this._http.get(this._videoIDUrl).map((response:Response)=><VideoCommentModel[]> response.json()).catch(this._errorHandler);
+    
+   }
+     _errorHandler(error:Response){
         console.error(error);
         return Observable.throw(error || "Server Error")
     }

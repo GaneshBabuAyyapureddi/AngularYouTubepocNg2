@@ -11,10 +11,12 @@ export class AppComponent {
   show: boolean = true;
   public childData: string;
   public selectedVideoID: string;
-
+  public selectedVideo: VideoObject;
+  // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
   ngOnInit() {
     this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
     this.show = true;
+    this.selectedVideoID = "abcd1234";
   }
 
   getVideo(selectedVideo) {
@@ -29,6 +31,6 @@ export class AppComponent {
     } else {
       this.show = false;
     }
-  }
 
+  }
 }

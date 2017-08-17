@@ -10,7 +10,8 @@
         "dateCreated": "12/05/1990",
         "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
         "uploadedBy": "Hasina", 
-		"type": "video"
+        "type": "video",
+        "icon":"http://lorempixel.com/200/200/sports/1/"
     },
     {
         "id": "abcd12345",
@@ -23,7 +24,8 @@
         "dateCreated": "1/5/2000",
         "thumbnailImage": "http://icons.iconarchive.com/icons/pelfusion/flat-file-type/512/doc-icon.png",
         "uploadedBy": "hollywood",
-		"type": "doc"
+        "type": "doc",
+        "icon":"http://lorempixel.com/200/200/sports/2/"
     },
     {
         "id": "abcd123456",
@@ -36,7 +38,8 @@
         "dateCreated": "11/8/2010",
         "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
         "uploadedBy": "Hasina",
-		"type": "video"
+        "type": "video",
+        "icon":"http://lorempixel.com/200/200/sports/3/"
     },
     {
         "id": "abcd1234567",
@@ -49,7 +52,8 @@
         "dateCreated": "17/8/2011",
         "thumbnailImage": "http://icons.iconarchive.com/icons/pelfusion/flat-file-type/512/doc-icon.png",
         "uploadedBy": "Hasina",
-		"type": "doc"
+        "type": "doc",
+        "icon":"http://lorempixel.com/200/200/sports/4/"
     },
     {
         "id": "abcd12345678",
@@ -62,7 +66,8 @@
         "dateCreated": "1/10/2011",
         "thumbnailImage": "http://lexhindustan.com/wp-content/uploads/2017/07/placeholder_600x450.jpg",
         "uploadedBy": "Hasina",
-		"type": "video"
+        "type": "video",
+        "icon":"http://lorempixel.com/200/200/sports/5/"
     },
     {
         "id": "abcd123456789",
@@ -75,6 +80,7 @@
         "dateCreated": "21/11/2001",
         "thumbnailImage": "http://icons.iconarchive.com/icons/pelfusion/flat-file-type/512/doc-icon.png",
         "uploadedBy": "Hasina",
-		"type": "doc"
+        "type": "doc",
+        "icon":"http://lorempixel.com/200/200/sports/6/"
     }
 ]
