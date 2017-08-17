@@ -11,7 +11,7 @@ import {Observable} from 'rxjs/Rx';
 export class VideoIdService{
 
     // private _videourl: string = "assets/videos.json"
-     private _videoIDUrl: string = "assets/";
+     private _videoIDUrl: string = "assets/CommentsJson/";
     // private _videourl: string = "assets/videos.json"
     private _videourl: string = "assets/videos_new.json"
 
@@ -26,10 +26,10 @@ export class VideoIdService{
   
 
    getComments(fileName):Observable<VideoCommentModel[]>{
-        // this._videoIDUrl = this._videoIDUrl + fileName + "."+ "json";
+        this._videoIDUrl = this._videoIDUrl + fileName + "."+ "json";
          console.log ("filename :"+ fileName);
         console.log ("VideoIdurl is :"+ this._videoIDUrl);
-    return this._http.get(fileName).map((response:Response)=><VideoCommentModel[]> response.json()).catch(this._errorHandler);
+    return this._http.get(this._videoIDUrl).map((response:Response)=><VideoCommentModel[]> response.json()).catch(this._errorHandler);
     
    }
      _errorHandler(error:Response){

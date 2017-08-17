@@ -17,10 +17,11 @@ export class AppComponent {
     console.log(this.childData);
     this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
     this.show = true;   
+    this.selectedVideoID = "abcd1234";
 }
 
 getVideo(video){
-  console.log('In app component');  
+  console.log('In app component video id' + video.id );  
   this.childData = video.url;
   this.selectedVideo = video;
   this.selectedVideoID = video.id;

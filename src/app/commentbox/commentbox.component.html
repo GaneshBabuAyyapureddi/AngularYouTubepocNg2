@@ -13,7 +13,7 @@
     </div>
   </div>
   <div>
-    <ul *ngFor="let comment of commentList" class="w3-padding-16">
+    <ul *ngFor="let comment of videoCommentObj " class="w3-padding-16">
       <img [src]=comment.icon class="w3-left w3-circle w3-border w3-margin-right" id="commentIcon">
       <li>
         <div id="commentUsername">{{comment.username}}</div>
