@@ -4,25 +4,24 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { VideoObject } from './video-object';
 import { VideoCommentModel } from './video-comments-model';
-import {Observable} from 'rxjs/Rx';
-// import { VideoObject } from './video';
+import { Observable } from 'rxjs/Rx';
 
 @Injectable()
-export class VideoIdService{
+export class VideoIdService {
 
     // private _videourl: string = "assets/videos.json"
      private _videoIDUrl: string = "assets/CommentsJson/";
+ 
     // private _videourl: string = "assets/videos.json"
     private _videourl: string = "assets/videos_new.json"
 
-    constructor(private _http: Http){} 
+    constructor(private _http: Http) { }
 
-    getVideoPlayerData(): Observable<VideoObject[]>{
+    getVideoPlayerData(): Observable<VideoObject[]> {
         return this._http.get(this._videourl)
-            .map((response:Response) =><VideoObject[]> response.json())
-             .catch(this._errorHandler);
+            .map((response: Response) => <VideoObject[]>response.json())
+            .catch(this._errorHandler);
     }
-
   
 
    getComments(fileName):Observable<VideoCommentModel[]>{
