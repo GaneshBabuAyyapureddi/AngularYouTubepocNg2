@@ -12,6 +12,9 @@ export class VideoIdService{
 
     private _videourl: string = "assets/videos.json"
      private _videoIDUrl: string = "assets/";
+    // private _videourl: string = "assets/videos.json"
+    //private _videourl: string = "assets/videos_new.json"
+
     constructor(private _http: Http){} 
 
     getVideoPlayerData(): Observable<VideoObject[]>{

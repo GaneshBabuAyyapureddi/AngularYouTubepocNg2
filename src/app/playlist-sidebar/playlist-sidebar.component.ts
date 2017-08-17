@@ -14,11 +14,11 @@ import { VideoObject } from '../video-object';
 export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
   videoList: VideoObject[];
-  filename = "./assets/videos.json";
 
   // playListEvent = new EventEmitter<string>();
   videoObj: VideoObject[];
-  constructor(private _video: VideoIdService) { }
+  constructor(private _video: VideoIdService) {
+  }
 
   ngOnInit() {
     this._video.getVideoPlayerData().subscribe(videoObj => this.videoObj = videoObj);
@@ -26,9 +26,10 @@ export class PlaylistSidebarComponent implements OnInit {
   }
 
   onClickVideoFromPlayList(video) {
-    console.log(this.videoObj[video]);
+    console.log(this.videoObj[video].url);
+    console.log(this.videoObj[video].type);
     this.playListEvent.emit(this.videoObj[video]);
-
   }
 
 }
+

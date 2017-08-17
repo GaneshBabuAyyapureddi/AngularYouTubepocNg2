@@ -9,4 +9,5 @@ export interface VideoObject {
    dateCreated: string;     
    thumbnailImage: string;     
    uploadedBy: string;
+   type: string;
 }
