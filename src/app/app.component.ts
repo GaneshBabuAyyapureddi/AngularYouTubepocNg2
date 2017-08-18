@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { VideoObject } from './video-object';
 import { CommentService } from './commentbox/comment.service';
+import { CommentboxComponent } from "./commentbox/commentbox.component";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { CommentService } from './commentbox/comment.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild(CommentboxComponent) testClass;
   show: boolean = true;
   public childData: string;
   public selectedVideoID: string;
@@ -31,6 +33,6 @@ export class AppComponent {
     } else {
       this.show = false;
     }
-
+    this.testClass.enableSubmit();
   }
 }

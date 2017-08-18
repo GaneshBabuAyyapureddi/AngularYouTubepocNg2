@@ -6,9 +6,16 @@
         <label for="label-video" style="margin-left:10px;font-size:30px;height:20px;font-family:italic; color:#565555;">VideoPlayer</label>
       </div>
     </div>
-    <input type="text" class="searchTerm" placeholder="Search">
-    <button type="submit" class="searchButton">
+    <div>
+      <input type="text" class="searchTerm" placeholder="Search" [(ngModel)]="term">
+      <button type="submit" class="searchButton">
         <i class="fa fa-search"></i>
-     </button>
+      </button>
+      <!-- <div *ngFor="let item of items | filter:term">
+        <p>
+          {{item.values}}
+        </p>
+      </div> -->
+    </div>
   </div>
 </div>
