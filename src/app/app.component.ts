@@ -1,36 +1,50 @@
 import { Component, Input } from '@angular/core';
 import { VideoObject } from './video-object';
 import { CommentService } from './commentbox/comment.service';
+import { VideoIdService } from "./videos-id.service";
+import { Http , Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [VideoIdService]
 })
 export class AppComponent {
   show: boolean = true;
   public childData: string;
   public selectedVideoID: string;
   public selectedVideo: VideoObject;
-  // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
+  currentItem: number;
+  public videosArray: VideoObject[];
+
+  constructor(private _video: VideoIdService) { }
+
   ngOnInit() {
-    this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
     this.show = true;
-    this.selectedVideoID = "abcd1234";
+    this.currentItem = +localStorage.getItem('currentPlayingItem');
+    this._video.getVideoPlayerData().subscribe(result => this.videosArray = result);
+    if (this.currentItem == 0) {
+      this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
+      this.selectedVideoID = "abcd1234";
+    }
+    else {
+      console.log('this.videosArray ',  this.videosArray);
+      this.selectedVideo = this.videosArray[this.currentItem];
+      this.childData = this.selectedVideo.url;
+      this.selectedVideoID = this.selectedVideo.id;
+    }
   }
 
   getVideo(selectedVideo) {
-    console.log('In app component');
     this.childData = selectedVideo.url;
     this.selectedVideoID = selectedVideo.id;
-    console.log(selectedVideo.id);
-    console.log(selectedVideo.type);
-    console.log(sessionStorage.getItem('selectedPos'));
     if (selectedVideo.type == "video") {
       this.show = true;
     } else {
       this.show = false;
     }
-
   }
 }

@@ -26,19 +26,21 @@ import { trigger, state, style, animate, transition, keyframes, sequence } from 
 export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
   state: string = 'active';
+  currentPlayingItem : number;
 
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }
 
   ngOnInit() {
-    this._video.getVideoPlayerData().subscribe(reslut => this.videoObj = reslut);
-    //this.playListEvent.emit(this.videoObj[0]);
+    this.currentPlayingItem  =  +localStorage.getItem("currentPlayingItem");
+    console.log (this.currentPlayingItem);
+    this._video.getVideoPlayerData().subscribe(result => this.videoObj = result);
   }
 
   onClickVideoFromPlayList(position) {
+    localStorage.setItem('currentPlayingItem', position);
     console.log(this.videoObj[position].url);
     console.log(this.videoObj[position].type);
-    sessionStorage.setItem('selectedPos', position);
     this.playListEvent.emit(this.videoObj[position]);
   }
 
