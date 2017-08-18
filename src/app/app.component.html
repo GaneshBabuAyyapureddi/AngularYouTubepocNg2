@@ -6,7 +6,7 @@
   <div id="leftContainer"> -->
      <app-videoplayer [videoUrl]="childData"></app-videoplayer>
     <app-descriptionbox [videoObject]=selectedVideo></app-descriptionbox>
-    <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
+    <app-commentbox [videoID]="selectedVideoID" ></app-commentbox> 
   </div>
   <div id="docContainer" *ngIf="!show">
         <object type="text/html" id="objectContainer" class="w3-ul w3-card-4"

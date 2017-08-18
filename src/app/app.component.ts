@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { VideoObject } from './video-object';
 import { CommentService } from './commentbox/comment.service';
 import { VideoIdService } from "./videos-id.service";
 import { Http , Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import { CommentboxComponent } from "./commentbox/commentbox.component";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import 'rxjs/add/operator/map';
   providers: [VideoIdService]
 })
 export class AppComponent {
+  @ViewChild(CommentboxComponent) commentboxData;
   show: boolean = true;
   public childData: string;
   public selectedVideoID: string;
@@ -46,5 +48,7 @@ export class AppComponent {
     } else {
       this.show = false;
     }
+    this.commentboxData.getvideoCommentData(this.selectedVideoID);
+
   }
 }

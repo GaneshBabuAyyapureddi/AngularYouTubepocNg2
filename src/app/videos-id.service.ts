@@ -8,11 +8,8 @@ import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class VideoIdService {
-
-    // private _videourl: string = "assets/videos.json"
-     private _videoIDUrl: string = "assets/CommentsJson/";
- 
-    // private _videourl: string = "assets/videos.json"
+    private _commentsBaseUrl: string = "assets/CommentsJson/";
+    private _videoIDUrl: string;
     private _videourl: string = "assets/videos_new.json"
 
     constructor(private _http: Http) { }
@@ -22,19 +19,15 @@ export class VideoIdService {
             .map((response: Response) => <VideoObject[]>response.json())
             .catch(this._errorHandler);
     }
-  
+    getComments(fileName): Observable<VideoCommentModel[]> {
+        this._videoIDUrl = "";
+        this._videoIDUrl = this._commentsBaseUrl + fileName + "." + "json";
+        console.log("VideoIdurl is :" + this._videoIDUrl);
+        return this._http.get(this._videoIDUrl).map((response: Response) => <VideoCommentModel[]>response.json()).catch(this._errorHandler);
 
-   getComments(fileName):Observable<VideoCommentModel[]>{
-        this._videoIDUrl = this._videoIDUrl + fileName + "."+ "json";
-         console.log ("filename :"+ fileName);
-        console.log ("VideoIdurl is :"+ this._videoIDUrl);
-    return this._http.get(this._videoIDUrl).map((response:Response)=><VideoCommentModel[]> response.json()).catch(this._errorHandler);
-    
-   }
-     _errorHandler(error:Response){
+    }
+    _errorHandler(error: Response) {
         console.error(error);
         return Observable.throw(error || "Server Error")
     }
-
-
 }
