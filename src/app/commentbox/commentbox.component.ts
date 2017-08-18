@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { VideoIdService } from '../videos-id.service';
+import { VideoCommentModel } from '../video-comments-model';
 
 @Component({
   selector: 'app-commentbox',
@@ -14,23 +15,23 @@ export class CommentboxComponent implements OnInit {
   public isDisabled: boolean = true;
   errorMsg: String;
   commentList = [];
-  
+  videoCommentObj: VideoCommentModel[];
   constructor(private _commentService: VideoIdService) { }
 
   ngOnInit() {
-    this.videoID = "assets/abcd1234.json";
-    this._commentService.getComments(this.videoID).subscribe(resCommentData => this.commentList = resCommentData
+    this._commentService.getComments(this.videoID).subscribe(videoCommentObj => this.videoCommentObj = videoCommentObj
       , resCommentError => this.errorMsg = resCommentError);
-    console.log('in ng on init comment component' + this.videoID);
-    console.log('in  comment  component list of video' + this.commentList);
+  }
+  getvideoCommentData(videoName) {
+    this._commentService.getComments(videoName).subscribe(videoCommentObj => this.videoCommentObj = videoCommentObj
+      , resCommentError => this.errorMsg = resCommentError);
+    console.log('in comment component etvideoCommentData' + videoName);
+    console.log('in comment component etvideoCommentData list' + this.videoCommentObj);
   }
 
   enableSubmit() {
     if (this.commentInput.length > 0) {
       this.isDisabled = false;
     }
-    console.log('in comment component' + this.videoID);
-    console.log('in comment component list' + this.commentList);
-    //console.log("data..."+this.commentInput + this.isDisabled);
   }
 }
