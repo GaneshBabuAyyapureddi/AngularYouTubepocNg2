@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { VideoIdService } from '../videos-id.service';
 import { VideoObject } from '../video-object';
 
@@ -13,6 +13,7 @@ import { VideoObject } from '../video-object';
 })
 export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
+  
 
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) {  }
