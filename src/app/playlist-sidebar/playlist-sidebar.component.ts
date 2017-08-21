@@ -34,7 +34,7 @@ export class PlaylistSidebarComponent implements OnInit {
   ngOnInit() {
     this.currentPlayingItem = +localStorage.getItem("currentPlayingItem");
     console.log('current playing item from playlist' + this.currentPlayingItem);
-    this._video.getVideoPlayerData().subscribe(result => this.videoObj = result);
+    this._video.getVideoPlayerData().subscribe(result => {this.videoObj = result; console.log('Result inside arrow func: '+ this.videoObj);});
     console.log('First Result: '+ this.videoObj);
     this.getVideosArray();
   }

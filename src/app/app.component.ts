@@ -58,6 +58,7 @@ export class AppComponent implements AfterViewInit {
   getVideo(selectedVideo) {
     this.childData = selectedVideo.url;
     this.selectedVideoID = selectedVideo.id;
+    this.selectedVideo = selectedVideo;
     if (selectedVideo.type == "video") {
       this.show = true;
     } else {
