@@ -17,6 +17,7 @@ export class VideoIdService {
     getVideoPlayerData(): Observable<VideoObject[]> {
         return this._http.get(this._videourl)
             .map((response: Response) => <VideoObject[]>response.json())
+            .do(data => console.log(JSON.stringify(data)))
             .catch(this._errorHandler);
     }
     getComments(fileName): Observable<VideoCommentModel[]> {

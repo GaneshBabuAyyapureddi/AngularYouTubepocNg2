@@ -19,8 +19,9 @@ export class CommentboxComponent implements OnInit {
   constructor(private _commentService: VideoIdService) { }
 
   ngOnInit() {
-    this._commentService.getComments(this.videoID).subscribe(videoCommentObj => this.videoCommentObj = videoCommentObj
-      , resCommentError => this.errorMsg = resCommentError);
+    // this._commentService.getComments(this.videoID).subscribe(videoCommentObj => this.videoCommentObj = videoCommentObj
+    //   , resCommentError => this.errorMsg = resCommentError);
+    this.getvideoCommentData(this.videoID);
   }
   getvideoCommentData(videoName) {
     this._commentService.getComments(videoName).subscribe(videoCommentObj => this.videoCommentObj = videoCommentObj
