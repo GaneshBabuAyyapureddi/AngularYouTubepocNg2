@@ -1,23 +1,24 @@
 <div id="descriptionContainer" class="w3-ul w3-card-4">
     <h3 id="title">{{videoObject ?. title}}</h3>
-     <div class="w3-padding-5">
-        <img class="w3-left w3-circle w3-margin-right" id="img-des" [src]='videoObject ?. icon'  >
+    <div class="w3-padding-5">
+        <img class="w3-left w3-circle w3-margin-right" id="img-des" [src]='videoObject ?. icon'>
         <div>
             <div id="view-like">
                 <h4>{{videoObject ?. noOfViews}} Views</h4><br>
                 <div style="margin-top:-10px">
-                    <i class="glyphicon glyphicon-thumbs-up" id="icon-like-dis"></i>{{videoObject ?. noOfLikes}}
-                    <i class="glyphicon glyphicon-thumbs-down" id="icon-like-dis" style="margin-left:10px"></i>{{videoObject ?. noOfDislikes}}
-                </div> 
+                    <i class="glyphicon glyphicon-thumbs-up" (click)="likesincrementUp()" id="icon-like-dis"></i>{{videoObject ?. noOfLikes}}
+                    <i class="glyphicon glyphicon-thumbs-down" (click)="dislikesdecrementDown()" id="icon-like-dis" style="margin-left:10px"></i>{{videoObject
+                    ?. noOfDislikes}}
+                </div>
             </div><br>
             <span class="w3-large" style="margin-top:50px;">{{videoObject ?. uploadedBy}}</span><br>
         </div>
     </div>
-    
-       <hr style="margin-top:35px;"/>  
+
+    <hr style="margin-top:35px;" />
     <h5 style="margin-left: 20px;">Published on {{videoObject ?. dateCreated}}</h5>
     <div id="description">
-     <p>{{videoObject ?. description}}</p>   
+        <p>{{videoObject ?. description}}</p>
     </div>
 
 </div>
