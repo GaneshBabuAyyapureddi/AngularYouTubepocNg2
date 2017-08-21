@@ -1,22 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="appContainer">
   <app-titlebar></app-titlebar>
-  <div id="leftContainer" *ngIf="show">
-    <!-- <app-videoplayer videoUrl={{childData}}></app-videoplayer>
-  <div id="leftContainer"> -->
-     <app-videoplayer [videoUrl]="childData"></app-videoplayer>
+  <div >
+    <ej-splitter id="splitterdefault" height="600"  orientation="horizontal" [properties]="proper" enableAutoResize="true" >
+        <div>
+           <div  id="leftSplitter"> <app-videoplayer [videoUrl]="childData"></app-videoplayer>
     <app-descriptionbox [videoObject]=selectedVideo></app-descriptionbox>
-    <app-commentbox [videoID]="selectedVideoID"></app-commentbox> 
+    <app-commentbox [videoID]="selectedVideoID"></app-commentbox>  </div>
+        </div>
+        <div>
+            <div  id="rightSplitter"> <app-playlist-sidebar (playListEvent)="getVideo($event)"></app-playlist-sidebar></div>
+        </div>
+    </ej-splitter>
+</div>
+ <!-- <div id="leftContainer" *ngIf="show">
+  
+    
   </div>
   <div id="docContainer" *ngIf="!show">
         <object type="text/html" id="objectContainer" class="w3-ul w3-card-4"
         data="http://tamil.oneindia.com/news/india/ariyalur-student-anitha-brother-says-if-neet-based-admission-granted-her-sister-293003.html">
       </object>  
-       <!-- <iframe name="iframe985426" id="objectContainer"  align="center" class="w3-ul w3-card-4"
-        src="http://tamil.oneindia.com/news/india/ariyalur-student-anitha-brother-says-if-neet-based-admission-granted-her-sister-293003.html" ></iframe>  -->
+     
   </div>
   <div id="rightContainer">
     <app-playlist-sidebar (playListEvent)="getVideo($event)"></app-playlist-sidebar>
-  </div>
+  </div>-->
 
 </div>

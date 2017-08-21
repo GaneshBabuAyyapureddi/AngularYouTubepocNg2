@@ -26,12 +26,14 @@ import { trigger, state, style, animate, transition, keyframes, sequence } from 
 export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
   state: string = 'active';
+  currentItemPos : any = 0;
 
   videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }
 
   ngOnInit() {
     this._video.getVideoPlayerData().subscribe(reslut => this.videoObj = reslut);
+    console.log("Inisde playlist::: "+ this.videoObj);
     //this.playListEvent.emit(this.videoObj[0]);
   }
 
@@ -39,6 +41,8 @@ export class PlaylistSidebarComponent implements OnInit {
     console.log(this.videoObj[position].url);
     console.log(this.videoObj[position].type);
     sessionStorage.setItem('selectedPos', position);
+    this.currentItemPos = position;
+    console.log("currPos::: "+this.currentItemPos+ "pos :: "+ position);
     this.playListEvent.emit(this.videoObj[position]);
   }
 

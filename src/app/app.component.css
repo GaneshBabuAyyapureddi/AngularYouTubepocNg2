@@ -28,3 +28,16 @@
     min-width: 80%;
     max-width: 100%;
 }
+#splitterdefault{
+  margin-left: 5%;
+   width: 90%;
+   margin-right: 5%;
+    margin-top:10px;
+    padding-right: 10px;
+}
+#leftSplitter{
+    
+}
+#rightSplitter{
+ margin:0;
+}

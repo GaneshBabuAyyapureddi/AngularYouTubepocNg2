@@ -12,6 +12,11 @@ export class AppComponent {
   public childData: string;
   public selectedVideoID: string;
   public selectedVideo: VideoObject;
+
+   proper:any;   
+    constructor() {
+        this.proper = [{}, { collapsible: true,  resizable: true }]; 
+        }   
   // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
   ngOnInit() {
     this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";

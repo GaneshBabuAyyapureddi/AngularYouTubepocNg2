@@ -1,9 +1,9 @@
 #commentsContainer {
-    margin-left: 20%;
+   
     margin-top: 10px;
-    max-width: 80%;
+   
     background-color: white;
-    width: 80%;
+    
     min-height: 250px !important;
 }
 #header{
