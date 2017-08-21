@@ -12,4 +12,10 @@ export class TitlebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  items = [
+    { name: "archie", values: ["car", "alto", "sandro"] },
+    { name: "jake", values: ["acide", "alto", "vetice"] },
+    { name: "richard", values: ["banana", "car", "doct"] }
+  ];
+
 }

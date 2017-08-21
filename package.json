@@ -23,6 +23,7 @@
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
     "ej-angular2": "^15.3.26",
+    "ng2-search-filter": "^0.3.1",
     "rxjs": "^5.1.0",
     "syncfusion-javascript": "^15.3.26",
     "zone.js": "^0.8.4"
