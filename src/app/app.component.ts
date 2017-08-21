@@ -11,7 +11,7 @@ import { PlaylistSidebarComponent } from "./playlist-sidebar/playlist-sidebar.co
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild(CommentboxComponent) commentboxData;
