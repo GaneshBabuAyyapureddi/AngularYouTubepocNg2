@@ -1,12 +1,14 @@
 <div class="playlistContainer">
   <ul>
-    <li *ngFor="let video of videoObj; let i = index" class="videoList w3-ul w3-card-4" 
+    <li *ngFor="let video of videoObj; let i = index" [ngClass]="i == currentIndex ? 'activeVideoList' : 'videoList'"  class="w3-ul w3-card-4" 
       (click)="onClickVideoFromPlayList(i)" 
-      [@anim]="state" []=>
+      [@anim]="state" >
+     
         <img [src]='video.thumbnailImage' style="width:150px;height:85px;float:left;margin-right:5px;margin-left:5px;margin-top:7px;">
         <p class="titleTag">{{video.title}}</p>
         <p class="detailTag"> {{video.uploadedBy}} </p>
         <p class="detailTag"> {{video.noOfViews}} views </p>
+      
     </li>
   </ul>
 </div>

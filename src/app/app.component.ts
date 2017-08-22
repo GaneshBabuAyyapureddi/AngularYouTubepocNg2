@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit {
   public childData: string;
   public selectedVideoID: string;
   public selectedVideo: VideoObject;
-
+  currentItem: number;
    proper:any;   
     constructor() {
         this.proper = [{}, { collapsible: true,  resizable: true }]; 
@@ -29,9 +29,7 @@ export class AppComponent implements AfterViewInit {
   // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
   ngOnInit() {
     this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
-  currentItem: number;
-
-  constructor() { }
+  }
 
   ngAfterViewInit() {
     this.show = true;

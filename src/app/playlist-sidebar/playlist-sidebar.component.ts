@@ -27,7 +27,7 @@ export class PlaylistSidebarComponent implements OnInit {
   @Output() playListEvent = new EventEmitter<VideoObject>();
   state: string = 'active';
   currentPlayingItem: number;
-
+  currentIndex : number;
   public videoObj: VideoObject[];
   constructor(private _video: VideoIdService) { }
 
@@ -41,6 +41,7 @@ export class PlaylistSidebarComponent implements OnInit {
 
   onClickVideoFromPlayList(position) {
     localStorage.setItem('currentPlayingItem', position);
+    this.currentIndex = position;
     this.playListEvent.emit(this.videoObj[position]);
   }
   getVideosArray() : VideoObject[]{
