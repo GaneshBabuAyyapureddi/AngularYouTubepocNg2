@@ -8,6 +8,8 @@ import 'rxjs/add/operator/map';
 import { CommentboxComponent } from "./commentbox/commentbox.component";
 import { PlaylistSidebarComponent } from "./playlist-sidebar/playlist-sidebar.component";
 
+import { EJComponents } from 'ej-angular2';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,7 +28,7 @@ export class AppComponent implements AfterViewInit {
     constructor() {
         this.proper = [{}, { collapsible: true,  resizable: true }]; 
         }   
-  // public childData ='https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os';
+  
   ngOnInit() {
     this.childData = "https://www.youtube.com/embed/GU-2T7k9NfI?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os";
   }
@@ -72,4 +74,6 @@ export class AppComponent implements AfterViewInit {
     }
     this.commentboxData.getvideoCommentData(this.selectedVideoID);
   }
-  }
+
+
+}
