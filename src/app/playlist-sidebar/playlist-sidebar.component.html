@@ -5,9 +5,9 @@
       [@anim]="state" >
      
         <img [src]='video.thumbnailImage' style="width:150px;height:85px;float:left;margin-right:5px;margin-left:5px;margin-top:7px;">
-        <p class="titleTag">{{video.title}}</p>
-        <p class="detailTag"> {{video.uploadedBy}} </p>
-        <p class="detailTag"> {{video.noOfViews}} views </p>
+        <p [ngClass]="i == currentIndex ? 'activeTitleTag' : 'titleTag'" class="">{{video.title}}</p>
+        <p [ngClass]="i == currentIndex ? 'activeDetailTag' : 'detailTag'"class=""> {{video.uploadedBy}} </p>
+        <p [ngClass]="i == currentIndex ? 'activeDetailTag' : 'detailTag'" class="detailTag"> {{video.noOfViews}} views </p>
       
     </li>
   </ul>
