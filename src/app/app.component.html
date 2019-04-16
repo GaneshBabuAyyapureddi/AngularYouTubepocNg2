@@ -1,19 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="appContainer">
-  <app-titlebar></app-titlebar> 
-   <div >
-    <ej-splitter id="splitterdefault" height="600"  orientation="horizontal" [properties]="proper" enableAutoResize="true" >
-        <div>
-           <div  id="leftSplitter"> <app-videoplayer [videoUrl]="childData"></app-videoplayer>
-    <app-descriptionbox [videoObject]=selectedVideo></app-descriptionbox>
-    <app-commentbox [videoID]="selectedVideoID"></app-commentbox>  </div>
-        </div>
-        <div>
-            <div  id="rightSplitter"> <app-playlist-sidebar (playListEvent)="getVideo($event)"></app-playlist-sidebar></div>
-        </div>
-    </ej-splitter>
-</div>
- <!-- <div id="leftContainer" *ngIf="show">
+    <app-titlebar></app-titlebar>
+    <div>
+        <ej-splitter id="splitterdefault" height="600" orientation="horizontal" [properties]="proper" enableAutoResize="true">
+            <div>
+                <div id="leftSplitter">
+                    <app-videoplayer [videoUrl]="childData"></app-videoplayer>
+                    <app-descriptionbox [videoObject]=selectedVideo></app-descriptionbox>
+                    <app-commentbox [videoID]="selectedVideoID"></app-commentbox>
+                </div>
+            </div>
+            <div>
+                <div id="rightSplitter">
+                    <app-playlist-sidebar (playListEvent)="getVideo($event)"></app-playlist-sidebar>
+                </div>
+            </div>
+        </ej-splitter>
+    </div>
+    <!-- <div id="leftContainer" *ngIf="show">
   
     
     <app-commentbox [videoID]="selectedVideoID" ></app-commentbox> 
